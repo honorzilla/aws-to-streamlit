@@ -2,3 +2,4 @@ streamlit
 awswrangler
 pandas
 plotly
+boto3

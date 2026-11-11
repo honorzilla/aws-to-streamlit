@@ -4,9 +4,9 @@ import pandas as pd
 import numpy as np
 
 # BURAYA KENDİ PROCESSED VE FINAL KOVA İSİMLERİNİ YAZ:
-PROCESSED_BUCKET = "senin-processed-bucket-adin"
-FINAL_BUCKET = "senin-final-bucket-adin"
-GLUE_DATABASE = "kaggle_analytics_db"
+PROCESSED_BUCKET = "kendi-processed-kovanin-adi" # burayı güncelle
+FINAL_BUCKET = "final-data61"                  # burayı güncelle
+GLUE_DATABASE = "kaggle_analytics_db"           # burayı güncelle
 
 def clean_col_name(col):
     tr_map = str.maketrans("çğıöşüÇĞİÖŞÜ ", "cgiosuCGIOSU_")

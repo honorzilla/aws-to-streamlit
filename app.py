@@ -4,15 +4,12 @@ import boto3
 import plotly.express as px
 import pandas as pd
 
-
+#KENDİ REGION GLUE  VE S3 KOVA İSİMLERİNİ YAZ:
 REGION = "eu-north-1"  
 GLUE_DB = "kaggle_analytics_db"
 S3_OUTPUT = "s3://final-data61/athena_results/" 
 
-boto3.setup_default_session(
-    region_name=REGION
-)
-
+boto3.setup_default_session(region_name=REGION)
 
 @st.cache_data(ttl=60)
 def get_datasets():
